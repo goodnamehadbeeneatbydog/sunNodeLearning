@@ -5,7 +5,7 @@ var BufferHelper = require('bufferhelper');
 
 
 
-var job = new CronJob('* * * * * *', function() {
+var job = new CronJob('0 5 7 * * *', function() {
   console.log('You will see this message every second ：'+(new Date()));
 
   https.get('https://zhiyou.smzdm.com/user/checkin/jsonp_checkin?callback=jQuery1124014226422499881308_1593579578260&_=1593579578267',
