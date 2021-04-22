@@ -64,4 +64,7 @@ var job = new CronJob('0 5 7 * * *', function() {
   });
 
 }, null, true, 'Asia/Shanghai');
+
+console.log('服务器启动中=====  ：'+(new Date()));
 job.start();
+console.log('服务器启动完成=====  ：'+(new Date()));
