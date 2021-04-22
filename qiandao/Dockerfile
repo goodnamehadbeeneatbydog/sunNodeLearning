@@ -5,4 +5,4 @@ WORKDIR /app
 #     &&npm i 
 VOLUME [ "/app" ]
 # CMD [ "node","/app/index.js" ]
-ENTRYPOINT ["docker-entrypoint.sh"]
+ENTRYPOINT ["node","/app/index.js"]
