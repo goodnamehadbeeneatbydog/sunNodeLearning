@@ -7,8 +7,8 @@
     "start": "set PORT=8000 && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel": "./node_modules/.bin/babel browser.js -d build/",
-    "uglify":"./node_modules/.bin/uglifyjs build/browser.js -o build/brower.min.js",
-    "build":"npm run babel && npm run uglify"
+    "uglify": "./node_modules/.bin/uglifyjs build/browser.js -o build/brower.min.js",
+    "build": "npm run babel && npm run uglify"
   },
   "repository": {
     "type": "git",
