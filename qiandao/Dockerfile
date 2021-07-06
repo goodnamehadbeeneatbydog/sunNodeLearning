@@ -1,4 +1,4 @@
-FROM node
+FROM node:lts-alpine
 COPY . /app/
 WORKDIR /app
 # RUN npm config set registry https://registry.npm.taobao.org\
