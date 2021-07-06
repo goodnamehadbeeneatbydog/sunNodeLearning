@@ -12,7 +12,9 @@ var job = new CronJob('35 15 15 * * *', async function() {
 
     console.log('共收集到分红数据%d条：%s',result.length,moment().format('YYYY-MM-DD hh:mm:ss'));
 })
+console.log('服务器启动中=====  ：'+moment().format('YYYY-MM-DD hh:mm:ss'));
 job.start();
+console.log('服务器启动完成=====  ：'+moment().format('YYYY-MM-DD hh:mm:ss'));
 
 
 async function stockFh(fhrate){

@@ -5,4 +5,4 @@ WORKDIR /app
 #     &&npm i 
 VOLUME [ "/app" ]
 # CMD [ "node","/app/index.js" ]
-ENTRYPOINT ["node","/app/index.js"]
+ENTRYPOINT ["npm","run","start"]
