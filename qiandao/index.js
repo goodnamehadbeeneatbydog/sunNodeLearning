@@ -3,7 +3,7 @@ const https = require('https');
 const iconv = require('iconv-lite');
 var BufferHelper = require('bufferhelper');
 
-const juejinJob = require('./juejin/index');
+const juejinJob = require('./jobs/juejin/index');
 
 var job = new CronJob('0 5 7 * * *', function() {
   console.log('开始签到  ：'+(new Date()));
