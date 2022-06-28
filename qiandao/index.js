@@ -3,7 +3,7 @@ const https = require('https');
 const iconv = require('iconv-lite');
 var BufferHelper = require('bufferhelper');
 
-
+const juejinJob = require('./juejin/index');
 
 var job = new CronJob('0 5 7 * * *', function() {
   console.log('开始签到  ：'+(new Date()));
@@ -65,6 +65,10 @@ var job = new CronJob('0 5 7 * * *', function() {
 
 }, null, true, 'Asia/Shanghai');
 
-console.log('服务器启动中=====  ：'+(new Date()));
+console.log('什么值得买签到启动中=====  ：'+(new Date()));
 job.start();
-console.log('服务器启动完成=====  ：'+(new Date()));
+console.log('什么值得买签到启动完成=====  ：'+(new Date()));
+
+console.log('掘金签到启动中=====  ：'+(new Date()));
+juejinJob.start();
+console.log('掘金签到启动完成=====  ：'+(new Date()));
