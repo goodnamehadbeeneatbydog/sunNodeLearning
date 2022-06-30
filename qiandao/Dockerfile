@@ -1,4 +1,5 @@
 FROM node:lts-slim
+ENV TZ=Asia/Shanghai
 COPY . /app/
 WORKDIR /app
 # RUN npm config set registry https://registry.npm.taobao.org\
