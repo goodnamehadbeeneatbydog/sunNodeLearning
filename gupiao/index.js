@@ -50,10 +50,12 @@ async function stockFh(fhrate){
 
                 //股权登记日期
                 const djrq = fhObj.fhyx[0] &&fhObj.fhyx[0].EQUITY_RECORD_DATE?fhObj.fhyx[0].EQUITY_RECORD_DATE : '';
+                
+                /**
                 if(!djrq || moment(djrq) < now){
                     continue;
                 }
-                
+                 */
                 //股票代码
                 const code = fhObj.fhyx[0].SECUCODE;
                 //公共日期
