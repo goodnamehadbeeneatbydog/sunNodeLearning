@@ -48,7 +48,7 @@ async function qiandao() {
                 'sec-ch-ua': ' "Not?A_Brand";v="8", "Chromium";v="108", "Google Chrome";v="108"',
                 'sec-ch-ua-mobile': ' ?0',
                 'sec-ch-ua-platform': ' "Windows"',
-                'Cookie':' '+cc
+                'Cookie':' '+encodeURI(cc)
             },
         });
 
