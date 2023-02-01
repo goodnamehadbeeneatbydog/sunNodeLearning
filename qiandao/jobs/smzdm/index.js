@@ -17,7 +17,7 @@ const url =
 const moment = require("moment");
 var CronJob = require("cron").CronJob;
 
-const job = new CronJob("0 * * * * *", async function () {
+const job = new CronJob("0 5 7 * * *", async function () {
     console.log("开始签到  ：" + moment().format("YYYY-MM-DD hh:mm:ss"));
     const result = await qiandao();
 
